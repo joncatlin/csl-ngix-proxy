@@ -1,0 +1,8 @@
+version: “3”
+  services:
+    web:
+      image: nginx
+      restart_policy:
+        condition: always
+      ports:
+        - “8000:80”
