@@ -3,7 +3,8 @@ version: '3.4'
 services:
   nginx:
     image: nginx
-    restart_policy:
-      condition: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
     ports:
       - "8000:80"
